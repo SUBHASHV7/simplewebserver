@@ -38,6 +38,9 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 ## PROGRAM:
 
 ```
+from http.server import HTTPServer, BaseHTTPRequestHandler
+
+content = '''
 <!doctype html>
 <html>
 <head>
@@ -56,22 +59,9 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
    
 </h1>
 </body>
-</html>
+</html> 
 ```
-
 ```
-from http.server import HTTPServer, BaseHTTPRequestHandler
-
-content = '''
-<!doctype html>
-<html>
-<head>
-<title> My Web Server</title>
-</head>
-<body>
-<h1>Welcome</h1>
-</body>
-</html>'''
 
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
