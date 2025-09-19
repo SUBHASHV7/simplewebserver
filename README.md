@@ -37,12 +37,7 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
 
-<<<<<<< HEAD
-
-
-=======
 ```
->>>>>>> 3ada5b5c473230fb09a6f454a2eb1aedcaf819d7
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = '''
@@ -67,10 +62,6 @@ content = '''
 </html> 
 ```
 ```
-<<<<<<< HEAD
-=======
-
->>>>>>> 3ada5b5c473230fb09a6f454a2eb1aedcaf819d7
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
