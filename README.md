@@ -37,8 +37,12 @@ Open a browser and navigate to http://127.0.0.1:8000 (or the assigned port).
 
 ## PROGRAM:
 
+<<<<<<< HEAD
 
 
+=======
+```
+>>>>>>> 3ada5b5c473230fb09a6f454a2eb1aedcaf819d7
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = '''
@@ -60,9 +64,13 @@ content = '''
    
 </h1>
 </body>
-</html>
+</html> 
 ```
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3ada5b5c473230fb09a6f454a2eb1aedcaf819d7
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         print("Get request received...")
@@ -80,9 +88,7 @@ httpd.serve_forever()
 
 ## OUTPUT:
 
-<img width="1917" height="1199" alt="Screenshot 2025-09-06 083422" src="https://github.com/user-attachments/assets/5bec3234-360f-4111-8a87-ce5c77fb1a5e" />
-
-
+![alt text](<Screenshot 2025-08-29 093138.png>)
 
 ## RESULT:
 The program for implementing simple webserver is executed successfully.
